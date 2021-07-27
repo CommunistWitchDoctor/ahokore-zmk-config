@@ -61,9 +61,9 @@ behaviors {
 // |  Z  |  X  |  C  |  V  |  B   |  N  |  M   |  ,  |  .  |  /  |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
-   &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G   &kp H &hm RSHFT J  &hm RCTRL K  &hm LALT L  &hm RGUI SEMI
-   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp U  &kp L     &kp Y   &kp SEMI
+   &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp D   &kp H &hm RSHFT N  &hm RCTRL E  &hm LALT I  &hm RGUI O
+   &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH
    &kp LCTRL &lt 2 RET &kp LALT &kp RGUI &lt 1 SPC &kp RCTRL
                         >;
                 };
