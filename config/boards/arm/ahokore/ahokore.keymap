@@ -22,11 +22,65 @@ behaviors {
 
     combos {
     compatible = "zmk,combos";
-    combo_del {
+    combo_1 {
         timeout-ms = <50>;
-        key-positions = <18 19>;
-        bindings = <&kp DEL>;
-        layers = <1>;
+        key-positions = <0 10>;
+        bindings = <&kp N1>;
+        layers = <0>;
+    };
+    combo_2 {
+        timeout-ms = <50>;
+        key-positions = <1 11>;
+        bindings = <&kp N2>;
+        layers = <0>;
+    };
+    combo_3 {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp N3>;
+        layers = <0>;
+    };
+    combo_4 {
+        timeout-ms = <50>;
+        key-positions = <3 13>;
+        bindings = <&kp N4>;
+        layers = <0>;
+    };
+    combo_5 {
+        timeout-ms = <50>;
+        key-positions = <4 14>;
+        bindings = <&kp N5>;
+        layers = <0>;
+    };
+    combo_6 {
+        timeout-ms = <50>;
+        key-positions = <5 15>;
+        bindings = <&kp N6>;
+        layers = <0>;
+    };
+    combo_7 {
+        timeout-ms = <50>;
+        key-positions = <6 16>;
+        bindings = <&kp N7>;
+        layers = <0>;
+    };
+    combo_8 {
+        timeout-ms = <50>;
+        key-positions = <7 17>;
+        bindings = <&kp N8>;
+        layers = <0>;
+    };
+    combo_9 {
+        timeout-ms = <50>;
+        key-positions = <8 18>;
+        bindings = <&kp N9>;
+        layers = <0>;
+    };
+    combo_0 {
+        timeout-ms = <50>;
+        key-positions = <9 19>;
+        bindings = <&kp N0>;
+        layers = <0>;
     };
     combo_lalt {
         timeout-ms = <50>;
@@ -66,8 +120,14 @@ behaviors {
     };
     combo_tab {
         timeout-ms = <50>;
-        key-positions = <0 1>;
+        key-positions = <3 4>;
         bindings = <&kp TAB>;
+        layers = <0>;
+    };
+    combo_bkupctrl {
+        timeout-ms = <50>;
+        key-positions = <29 31>;
+        bindings = <&kp LCTRL>;
         layers = <0>;
     };
     combo_esc {
@@ -91,15 +151,15 @@ behaviors {
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  G   |  J  |  U   |  L  |  Y  |  ;  |
+// |  Q  |  W  |  F  |  P  |  G   |  J  |  L   |  U  |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  D   |  H  |  N   |  E  |  I  |  O  |
 // |  Z  |  X  |  C  |  V  |  B   |  N  |  M   |  ,  |  .  |  /  |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
                         bindings = <
-   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp U  &kp L     &kp Y   &kp SEMI
+   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI
    &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O
    &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH
-   &hm LCTRL BSPC &kp SPC &hm LSFT RET &kp RGUI &lt 1 BSPC &kp RCTRL
+   &kp BSPC &kp SPC &hm LSFT RET &kp DEL &lt 1 BSPC &kp RCTRL
                         >;
                 };
 
