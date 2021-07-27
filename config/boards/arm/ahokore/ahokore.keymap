@@ -76,8 +76,6 @@ behaviors {
         bindings = <&kp ESC>;
         layers = <0>;
     };
-    };
-    };
     combo_nav {
         timeout-ms = <50>;
         key-positions = <31 32>;
