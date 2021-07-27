@@ -69,12 +69,19 @@ behaviors {
         key-positions = <0 1>;
         bindings = <&kp TAB>;
         layers = <0>;
-
     };
     combo_esc {
         timeout-ms = <50>;
-        key-positions = <1 2>;
+        key-positions = <13 14>;
         bindings = <&kp ESC>;
+        layers = <0>;
+    };
+    };
+    };
+    combo_nav {
+        timeout-ms = <50>;
+        key-positions = <31 32>;
+        bindings = <&mo 2>;
         layers = <0>;
 
     };
@@ -94,7 +101,7 @@ behaviors {
    &kp Q &kp W &kp F &kp P &kp G   &kp J &kp U  &kp L     &kp Y   &kp SEMI
    &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O
    &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH
-   &kp LCTRL &lt 2 RET &kp LALT &kp RGUI &lt 1 SPC &kp RCTRL
+   &hm LCTRL BSPC &kp SPC &hm LSFT RET &kp RGUI &lt 1 BSPC &kp RCTRL
                         >;
                 };
 
