@@ -176,7 +176,7 @@ behaviors {
     combo_play {
         timeout-ms = <50>;
         key-positions = <30 31 32 33 34 35>;
-        bindings = <&kp K_PP>;
+        bindings = <&kp C_PP>;
     };
 };
 
@@ -228,18 +228,31 @@ behaviors {
                 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |BTCLR| RST |     |      |     |      | PGDN |  UP  | PGUP |      |
-// | BT0 |CMENU|     |      |     | HOME | LEFT | DOWN |RIGHT | END  |
-// | BT1 | BOOT|     |      |     |      |      |      |      |      |
+// |     | PGUP |  UP  | HOME |     |      | PGUP |  UP  | HOME |      |
+// |     | LEFT | DOWN |RIGHT |     |      | LEFT | DOWN |RIGHT |      |
+// |     | PGDN |      | END  |     |      | PGDN |      | END  |      |
 //             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
-   &bt BT_CLR   &reset      &trans  &trans &trans     &trans    &kp PG_DN &kp UP    &kp PG_UP &trans
-   &bt BT_SEL 0 &kp K_CMENU &trans  &trans &trans     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END
-   &bt BT_SEL 1 &bootloader &trans  &trans &trans     &trans    &trans    &trans    &trans    &trans
+   &trans &kp PG_UP &kp UP   &kp HOME  &trans &trans &trans &trams &trans &trans
+   &trans &kp LEFT  &kp DOWN &kp RIGHT &trans &trans &trans &trams &trans &trans
+   &trans &kp PG_DN &trans   &kp END   &trans &trans &trans &trams &trans &trans
    &trans   &trans    &trans     &trans   &trans   &trans
                         >;
                 };
-
+                
+                fnc_layer {
+// -----------------------------------------------------------------------------------------
+// |     |     |     |      |     |      |      |      |      |     |
+// | BT0 |CMENU|     |      |     |      |      |      |      |BTCLR|
+// | BT1 | BOOT|     |      |     |      |      |      |      | RST |
+//             | BSP | SPC |  ENT | DEL | BSP  | NUM |
+                        bindings = <
+   &kp F1       &kp F2      &kp F3  &kp F4 &kp F5     &kp F6  &kp F7  &kp F8  &kp F9 &kp F10
+   &bt BT_SEL 0 &kp K_CMENU &trans  &trans &kp F11    &kp F12 &trans  &trans  &trans &bt BTCLR
+   &bt BT_SEL 1 &bootloader &trans  &trans &trans     &trans  &trans  &trans  &trans &reset
+   &trans   &trans    &trans     &trans   &trans   &trans
+                        >;
+                };
 
         };
 };
