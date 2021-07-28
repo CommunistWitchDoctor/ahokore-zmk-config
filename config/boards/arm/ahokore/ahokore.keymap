@@ -173,6 +173,11 @@ behaviors {
         bindings = <&kp tab>;
         layers = <0>;
     };
+    combo_play {
+        timeout-ms = <50>;
+        key-positions = <30 31 32 33 34 35>;
+        bindings = <&kp k_pp>;
+    };
 };
 
 };
