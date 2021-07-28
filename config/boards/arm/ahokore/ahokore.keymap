@@ -233,9 +233,9 @@ behaviors {
 // |     | PGDN |      | END  |     |      | PGDN |      | END  |      |
 //             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
-   &trans &kp PG_UP &kp UP   &kp HOME  &trans &trans &trans &trams &trans &trans
-   &trans &kp LEFT  &kp DOWN &kp RIGHT &trans &trans &trans &trams &trans &trans
-   &trans &kp PG_DN &trans   &kp END   &trans &trans &trans &trams &trans &trans
+   &trans &kp PG_UP &kp UP   &kp HOME  &trans &trans &trans &trans &trans &trans
+   &trans &kp LEFT  &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans
+   &trans &kp PG_DN &trans   &kp END   &trans &trans &trans &trans &trans &trans
    &trans   &trans    &trans     &trans   &trans   &trans
                         >;
                 };
