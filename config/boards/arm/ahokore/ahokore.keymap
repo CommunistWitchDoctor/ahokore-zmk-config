@@ -170,7 +170,7 @@ behaviors {
     combo_play {
         timeout-ms = <50>;
         key-positions = <30 31 32 33 34 35>;
-        bindings = <&kp pp>;
+        bindings = <&kp k_pp>;
     };
     combo_ttab {
         timeout-ms = <50>;
@@ -189,7 +189,7 @@ behaviors {
 // |  Q  |  W  |  F  |  P  |  G   |  J  |  L   |  U  |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  D   |  H  |  N   |  E  |  I  |  O  |
 // |  Z  |  X  |  C  |  V  |  B   |  N  |  M   |  ,  |  .  |  /  |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+//             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
    &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI
    &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O
@@ -203,7 +203,7 @@ behaviors {
 // |  `  |  [  |  {  |  (  |  <  |  >  |  )  |  }  |  ]  |  ?  |
 // |  ~  |  -  |  '  |  :  |  _  |  \  |  =  |  "  |  +  |  \  |
 // |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  |  |  ?  |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+//             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
    &kp GRAVE &kp LBRC  &kp LBKT &kp LPAR    &kp LT      &kp GT    &kp RPAR  &kp RBKT &kp RBRC  &kp QMARK
    &kp TILDE &kp MINUS &kp SQT  &kp COLON   &kp UNDER   &kp BSLH  &kp EQUAL &kp DQT  &kp PLUS  &kp BSLH
@@ -217,7 +217,7 @@ behaviors {
 // |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
 // |     |     |     |     |     |     |  4  |  5  |  6  |     |
 // |     |     |     |     |     |     |  1  |  2  |  3  |     |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+//             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7 &kp N8 &kp N9 &kp N0
    &kp trans &kp trans &kp trans &kp trans &kp trans &kp trans &kp N4 &kp N5 &kp N6 &kp trans
@@ -231,7 +231,7 @@ behaviors {
 // |BTCLR| RST |     |      |     |      | PGDN |  UP  | PGUP |      |
 // | BT0 |CMENU|     |      |     | HOME | LEFT | DOWN |RIGHT | END  |
 // | BT1 | BOOT|     |      |     |      |      |      |      |      |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+//             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
    &bt BT_CLR   &reset      &trans  &trans &trans     &trans    &kp PG_DN &kp UP    &kp PG_UP &trans
    &bt BT_SEL 0 &kp K_CMENU &trans  &trans &trans     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END
