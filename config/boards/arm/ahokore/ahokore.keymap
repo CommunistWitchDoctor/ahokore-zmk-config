@@ -19,6 +19,15 @@ behaviors {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+      sf: holdtap_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLDTAP_SHIFT";
+        #binding-cells = <2>;
+        tapping_term_ms = <300>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+
 
     combos {
     compatible = "zmk,combos";
@@ -174,7 +183,7 @@ behaviors {
         layers = <0>;
     };
     combo_play {
-        timeout-ms = <50>;
+        timeout-ms = <75>;
         key-positions = <30 31 32 33 34 35>;
         bindings = <&kp C_PP>;
     };
@@ -228,14 +237,14 @@ behaviors {
                 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |     | PGUP |  UP  | HOME |     |      | PGUP |  UP  | HOME |      |
+// |     | HOME |  UP  | PGUP |     |      | PGUP |  UP  | HOME |      |
 // |     | LEFT | DOWN |RIGHT |     |      | LEFT | DOWN |RIGHT |      |
-// |     | PGDN |      | END  |     |      | PGDN |      | END  |      |
+// |     | END  |      | PGDN |     |      | PGDN |      | END  |      |
 //             | BSP | SPC |  ENT | DEL | BSP  | NUM |
                         bindings = <
-   &trans &kp PG_UP &kp UP   &kp HOME  &trans &trans &trans &trans &trans &trans
-   &trans &kp LEFT  &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans
-   &trans &kp PG_DN &trans   &kp END   &trans &trans &trans &trans &trans &trans
+   &trans &kp HOME &kp UP   &kp PG_UP &trans &trans &kp PG_UP &kp UP   &kp HOME  &trans
+   &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans &kp LEFT  &kp DOWN &kp RIGHT &trans
+   &trans &kp END  &trans   &kp PG_DN &trans &trans &kp PG_DN &trans   &kp END   &trans
    &trans   &trans    &trans     &trans   &trans   &trans
                         >;
                 };
