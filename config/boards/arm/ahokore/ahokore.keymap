@@ -167,11 +167,6 @@ behaviors {
         key-positions = <31 34>;
         bindings = <&lt 4 ESC>;
     };
-    combo_play {
-        timeout-ms = <50>;
-        key-positions = <30 31 32 33 34 35>;
-        bindings = <&kp k_play_pause>;
-    };
     combo_ttab {
         timeout-ms = <50>;
         key-positions = <33 34>;
