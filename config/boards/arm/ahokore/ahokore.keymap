@@ -27,7 +27,14 @@ behaviors {
         flavor = "hold-preferred";
         bindings = <&kp>, <&kp>;
     };
-
+      ltt: layertap_layer {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYERTAP_LAYER";
+        #binding-cells = <2>;
+        tapping_term_ms = <300>;
+        flavor = "hold-preferred";
+        bindings = <&mo>, <&kp>;
+    };
 
     combos {
     compatible = "zmk,combos";
@@ -153,6 +160,18 @@ behaviors {
         bindings = <&kp TAB>;
         layers = <0>;
     };
+    combo_caps {
+        timeout-ms = <50>;
+        key-positions = <5 6>;
+        bindings = <&kp CAPS>;
+        layers = <0>;
+    };
+    combo_ins {
+        timeout-ms = <50>;
+        key-positions = <15 16>;
+        bindings = <&kp INS>;
+        layers = <0>;
+    };
     combo_bkupctrl {
         timeout-ms = <50>;
         key-positions = <30 31>;
@@ -203,7 +222,7 @@ behaviors {
    &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI
    &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O
    &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH
-   &kp BSPC &kp SPC &sf LSFT RET   &hm RSFT DEL &lt 1 BSPC &mo 2
+   &kp BSPC &kp SPC &sf LSFT RET   &hm RSFT DEL &ltt 1 BSPC &mo 2
                         >;
                 };
 
